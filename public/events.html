@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events · Musician Hub</title>
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/themes.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+  </head>
+  <body class="theme-light">
+    <div id="toast" class="toast"></div>
+
+    <header class="site-header">
+      <div class="logo-area">
+        <div class="avatar small">
+          <img src="/images/jzyno.png" alt="Artist photo" />
+        </div>
+        <div class="artist-meta">
+          <h1 id="artist-name">Jzyno</h1>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <a href="/" class="nav-link">Home</a>
+        <a href="/links" class="nav-link">Links</a>
+        <a href="/events" class="nav-link active">Events</a>
+        <a href="/contact" class="nav-link">Contact</a>
+      </nav>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode">
+        🌙
+      </button>
+    </header>
+
+    <main class="page page-events">
+      <header class="page-header">
+        <h2>Upcoming Events</h2>
+        <p>Find shows by date or location and add them to your calendar.</p>
+      </header>
+
+      <section class="event-filters">
+        <div class="field-group">
+          <label for="search-term">Search</label>
+          <input
+            type="text"
+            id="search-term"
+            placeholder="Search by title, venue, or location"
+          />
+        </div>
+        <div class="field-group">
+          <label for="date-filter">From date</label>
+          <input type="date" id="date-filter" />
+        </div>
+      </section>
+
+      <section>
+        <div id="event-list" class="event-list loading">
+          <div class="loader">Loading events…</div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year"></span> Jzyno. All rights reserved.</p>
+    </footer>
+
+    <script src="/js/main.js"></script>
+    <script src="/js/events.js"></script>
+  </body>
+</html>
+
+

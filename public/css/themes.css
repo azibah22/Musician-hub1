@@ -1,0 +1,87 @@
+/* Theme overrides (light vs dark are toggled on body) */
+
+body.theme-dark {
+  --bg: #05060a;
+  --bg-elevated: #121320;
+  --bg-soft: #1b1e2c;
+  --text: #f7f7ff;
+  --text-muted: #9ba5c0;
+}
+
+body.theme-light {
+  background: radial-gradient(circle at top left, #f6f7ff 0, #e7ecff 44%, #d5e0ff 100%);
+  color: #0a0b12;
+}
+
+body.theme-light .site-header {
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.96),
+    rgba(255, 255, 255, 0.86),
+    transparent
+  );
+  border-bottom-color: rgba(9, 11, 38, 0.08);
+}
+
+body.theme-light .main-nav {
+  background: rgba(255, 255, 255, 0.96);
+  border-color: rgba(9, 11, 38, 0.06);
+}
+
+body.theme-light .nav-link {
+  color: #626889;
+}
+
+body.theme-light .nav-link.active {
+  color: #151728;
+}
+
+body.theme-light .hero-text {
+  background: radial-gradient(circle at top left, #ffffff, #e6ebff);
+  border-color: rgba(9, 11, 38, 0.08);
+}
+
+body.theme-light .player-card,
+body.theme-light .highlight-card,
+body.theme-light .card,
+body.theme-light .event-card,
+body.theme-light .link-card {
+  background: linear-gradient(140deg, #ffffff, #e8ecff);
+  border-color: rgba(9, 11, 38, 0.08);
+  box-shadow: 0 14px 40px rgba(21, 28, 75, 0.18);
+}
+
+body.theme-light .event-meta,
+body.theme-light .tagline,
+body.theme-light .page-header p,
+body.theme-light .social-list a {
+  color: #70779b;
+}
+
+body.theme-light input,
+body.theme-light textarea {
+  background: rgba(255, 255, 255, 0.95);
+  border-color: rgba(9, 11, 38, 0.12);
+}
+
+body.theme-light input:focus,
+body.theme-light textarea:focus {
+  border-color: #ff6bcb;
+  box-shadow: 0 0 0 1px rgba(255, 107, 203, 0.4);
+  background: #ffffff;
+}
+
+body.theme-light .link-card {
+  background: radial-gradient(circle at top, #f6f2ff, #e4ecff);
+}
+
+body.theme-light .link-card:hover {
+  background: radial-gradient(circle at top, #ffffff, #dde6ff);
+}
+
+body.theme-light .toast {
+  background: rgba(255, 255, 255, 0.98);
+  color: #151728;
+}
+
+

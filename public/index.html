@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Musician Link Hub</title>
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/themes.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+  </head>
+  <body class="theme-light">
+    <div id="toast" class="toast"></div>
+
+    <header class="site-header">
+      <div class="logo-area">
+        <div class="avatar">
+          <img src="/images/jzyno.png" alt="Artist photo" />
+        </div>
+        <div class="artist-meta">
+          <h1 id="artist-name">Jzyno</h1>
+          <p class="tagline">Afro · Monrovia, Liberia</p>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <a href="/" class="nav-link active">Home</a>
+        <a href="/links" class="nav-link">Links</a>
+        <a href="/events" class="nav-link">Events</a>
+        <a href="/contact" class="nav-link">Contact</a>
+      </nav>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode">
+        🌙
+      </button>
+    </header>
+
+    <main class="page page-home">
+      <section class="hero">
+        <div class="hero-text">
+          <h2>Discover the Sound</h2>
+          <p>
+            Welcome to the central hub for all of my releases, live shows, and
+            behind-the-scenes content. Follow, stream, and never miss a show.
+          </p>
+          <div class="hero-actions">
+            <a href="/links" class="btn primary">Listen Now</a>
+            <a href="/events" class="btn ghost">Upcoming Shows</a>
+          </div>
+          <div class="social-share">
+            <button class="share-btn" data-share-type="profile">Share Profile</button>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <div class="player-card">
+            <h3>Featured Track</h3>
+            <!-- Example embeddable player (replace with your real embed) -->
+            <iframe
+              src="https://open.spotify.com/track/2NnqSG568w506fvH0pSTzI?si=428ddeff9d8a44ab"
+              width="100%"
+              height="152"
+              frameborder="0"
+              allowtransparency="true"
+              allow="encrypted-media"
+            ></iframe>
+          </div>
+          <div class="highlight-card">
+            <h3>Next Show</h3>
+            <p id="next-event-text">Loading next event…</p>
+            <a href="/events" class="btn small">View All Events</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="quick-links">
+        <h2>Stream My Music</h2>
+        <div id="link-grid" class="link-grid loading">
+          <div class="loader">Loading links…</div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year"></span> Jzyno. All rights reserved.</p>
+    </footer>
+
+    <script src="/js/main.js"></script>
+  </body>
+</html>
+
+

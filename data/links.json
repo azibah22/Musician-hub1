@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "platform": "Spotify",
+    "url": "https://open.spotify.com/artist/your-artist-id",
+    "icon": "spotify.svg",
+    "clickCount": 3
+  },
+  {
+    "id": 2,
+    "platform": "Apple Music",
+    "url": "https://music.apple.com/artist/your-artist-id",
+    "icon": "apple-music.svg",
+    "clickCount": 2
+  },
+  {
+    "id": 3,
+    "platform": "YouTube",
+    "url": "https://www.youtube.com/@yourchannel",
+    "icon": "youtube.svg",
+    "clickCount": 0
+  }
+]

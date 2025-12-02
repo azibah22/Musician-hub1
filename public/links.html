@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Streaming Links · Musician Hub</title>
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/themes.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+  </head>
+  <body class="theme-light">
+    <div id="toast" class="toast"></div>
+
+    <header class="site-header">
+      <div class="logo-area">
+        <div class="avatar small">
+          <img src="/images/jzyno.png" alt="Artist photo" />
+        </div>
+        <div class="artist-meta">
+          <h1 id="artist-name">Jzyno</h1>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <a href="/" class="nav-link">Home</a>
+        <a href="/links" class="nav-link active">Links</a>
+        <a href="/events" class="nav-link">Events</a>
+        <a href="/contact" class="nav-link">Contact</a>
+      </nav>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode">
+        🌙
+      </button>
+    </header>
+
+    <main class="page page-links">
+      <header class="page-header">
+        <h2>Streaming & Content</h2>
+        <p>Choose your favorite platform to start listening.</p>
+      </header>
+
+      <section>
+        <div id="link-grid" class="link-grid loading">
+          <div class="loader">Loading links…</div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year"></span> Jzyno. All rights reserved.</p>
+    </footer>
+
+    <script src="/js/main.js"></script>
+  </body>
+</html>
+
+

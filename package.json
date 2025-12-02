@@ -1,0 +1,28 @@
+{
+  "name": "musician-link-hub",
+  "version": "1.0.0",
+  "description": "Musician portfolio hub for streaming links and event listings with admin interface.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "music",
+    "portfolio",
+    "express",
+    "links",
+    "events"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "express-session": "^1.18.1",
+    "nodemailer": "^7.0.11"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin · Musician Hub</title>
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/themes.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+  </head>
+  <body class="theme-light admin-page">
+    <div id="toast" class="toast"></div>
+
+    <header class="site-header">
+      <div class="logo-area">
+        <div class="artist-meta">
+          <h1>Admin</h1>
+          <p class="tagline">Manage links and events</p>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <a href="/" class="nav-link">View Site</a>
+      </nav>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode">
+        🌙
+      </button>
+    </header>
+
+    <main class="page page-admin">
+      <section id="login-section" class="card">
+        <h2>Admin Login</h2>
+        <p>Enter the admin password to manage content.</p>
+        <div class="field-group">
+          <label for="admin-password">Password</label>
+          <input type="password" id="admin-password" />
+        </div>
+        <button id="login-btn" class="btn primary">Login</button>
+      </section>
+
+      <section id="admin-panel" class="admin-grid hidden">
+        <div class="card">
+          <header class="card-header">
+            <h2>Streaming Links</h2>
+          </header>
+          <form id="link-form" class="stacked-form">
+            <div class="field-group">
+              <label for="platform">Platform</label>
+              <input id="platform" type="text" required />
+            </div>
+            <div class="field-group">
+              <label for="url">URL</label>
+              <input id="url" type="url" required />
+            </div>
+            <div class="field-group">
+              <label for="icon">Icon (optional)</label>
+              <input id="icon" type="text" placeholder="spotify.svg" />
+            </div>
+            <button type="submit" class="btn primary">Add Link</button>
+          </form>
+          <div id="admin-links" class="admin-list"></div>
+        </div>
+
+        <div class="card">
+          <header class="card-header">
+            <h2>Events</h2>
+          </header>
+          <form id="event-form" class="stacked-form">
+            <div class="field-group">
+              <label for="event-title">Title</label>
+              <input id="event-title" type="text" required />
+            </div>
+            <div class="field-group">
+              <label for="event-date">Date</label>
+              <input id="event-date" type="date" required />
+            </div>
+            <div class="field-group">
+              <label for="event-time">Time</label>
+              <input id="event-time" type="time" />
+            </div>
+            <div class="field-group">
+              <label for="event-venue">Venue</label>
+              <input id="event-venue" type="text" />
+            </div>
+            <div class="field-group">
+              <label for="event-location">Location</label>
+              <input id="event-location" type="text" />
+            </div>
+            <div class="field-group">
+              <label for="event-ticket">Ticket URL</label>
+              <input id="event-ticket" type="url" />
+            </div>
+            <div class="field-group">
+              <label for="event-description">Description</label>
+              <textarea id="event-description" rows="2"></textarea>
+            </div>
+            <button type="submit" class="btn primary">Add Event</button>
+          </form>
+          <div id="admin-events" class="admin-list"></div>
+        </div>
+
+        <div class="card">
+          <header class="card-header">
+            <h2>Session</h2>
+          </header>
+          <button id="logout-btn" class="btn ghost">Logout</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year"></span> Your Artist Name. All rights reserved.</p>
+    </footer>
+
+    <script src="/js/main.js"></script>
+    <script src="/js/admin.js"></script>
+  </body>
+</html>
+
+

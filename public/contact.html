@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact · Musician Hub</title>
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/themes.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+  </head>
+  <body class="theme-light">
+    <div id="toast" class="toast"></div>
+
+    <header class="site-header">
+      <div class="logo-area">
+        <div class="avatar small">
+          <img src="/images/jzyno.png" alt="Artist photo" />
+        </div>
+        <div class="artist-meta">
+          <h1 id="artist-name">Jzyno</h1>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <a href="/" class="nav-link">Home</a>
+        <a href="/links" class="nav-link">Links</a>
+        <a href="/events" class="nav-link">Events</a>
+        <a href="/contact" class="nav-link active">Contact</a>
+      </nav>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode">
+        🌙
+      </button>
+    </header>
+
+    <main class="page page-contact">
+      <header class="page-header">
+        <h2>Contact & Booking</h2>
+        <p>Reach out for bookings, collaborations, or press inquiries.</p>
+      </header>
+
+      <section class="contact-layout">
+        <form id="contact-form" class="card">
+          <div class="field-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" required />
+          </div>
+          <div class="field-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" required />
+          </div>
+          <div class="field-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn primary">Send Message</button>
+        </form>
+
+        <aside class="card contact-info">
+          <h3>Connect</h3>
+          <ul class="social-list">
+            <li><a href="https://www.youtube.com/redirect?event=channel_description&redir_token=QUFFLUhqbHFNTmdaZ2Jab196OUxwb3BqQWFQdnh6SWQ3Z3xBQ3Jtc0trS1pTUFJYa19tWG0wX2JsOEstbGp1WnNUeVFxTXNITDdSc3hyeGVrMkg0SW8xWHpHS3pHbVZMY0U0TXYxVC1wRXphQ3hlVnFOQUgxMGVwR21abUxWdEpGTERTVmNNa2NkR21lNzZiV09tLWl1ZldiWQ&q=https%3A%2F%2Fwww.instagram.com%2Fjzyno__" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="#" target="_blank" rel="noopener">Twitter / X</a></li>
+            <li><a href="https://www.youtube.com/@jzyno" target="_blank" rel="noopener">YouTube</a></li>
+            <li><a href="https://open.spotify.com/artist/3gYUwwn7FiiBMKHe36OUaQ" target="_blank" rel="noopener">Spotify</a></li>
+          </ul>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year"></span> Jzyno. All rights reserved.</p>
+    </footer>
+
+    <script src="/js/main.js"></script>
+  </body>
+</html>
+
+
